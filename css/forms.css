@@ -1,0 +1,53 @@
+.form-group {
+    display: block;
+    margin: 1em;
+}
+
+input {
+    background-color: #f1fcf2;
+    margin-top: 5px;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline-width: 0;
+}
+
+input:focus {
+    border-bottom: solid;
+    border-width: 0.05em;
+    border-bottom-color: #0096ce;
+    transition: border-bottom-color ease-in 0.5s;
+}
+
+.btn-send {
+    border: none;
+    border-radius: 2px;
+    background-color: #d6593b;
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #f1fcf2;
+    width: 100%;
+    outline-width: 0;
+}
+
+.btn-info {
+    border: none;
+    color: white;
+    background: #d6593b;
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+}
+.btn-info > a{
+    color: white;
+    box-sizing: border-box;
+}

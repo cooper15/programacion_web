@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller # 1</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+</head>
+
+<body onload="displayTestimonial();">
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li id="brand">Logotipo</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Viajes</li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="container" style="margin-top: 2em;">
+        <!--<aside id="sidebar" class="col-1">
+            <section>
+                <h3>Costa Rica</h3>
+                <div>Costa Rica es un hermoso país</div>
+            </section>
+            <section>
+                <h3>Cuba</h3>
+                <div>Cuba también es un país hermoso</div>
+            </section>
+        </aside>-->
+        <section id="central" class="col-12">
+            <section id="img-container" class="articles">
+                <h3>Bellezas naturales</h3>
+                <image><img id="banner" src="img/mountain2.jpg" alt="Montaña"></image>
+                <div class="img-text-wrapper">
+                    <p id="img-p">Atrevase a viajar con nosotros y vivir una experiencia única llena de emociones</p>
+                    <button id="button-banner" style="position: relative">Conoce más</button>
+                </div>
+            </section>
+            <section class="articles">
+                <h3 style="text-align: center">Testimonios</h3>
+                <div class="col-4"></div>
+                <div id="testimonial-1" class="col-4 testimonial-card">
+                    <div class="col-12 testimonial-card-body">
+                        <image><img class="testimonial-img" src="img/boy.png" alt=""></image>
+                        <p class="testimonial-class">"La aventura vivida en C.R fue increíble, desde el primer momento el compromiso por parte de la empresa para hacernos sentir lo mejor posible se notó."</p>
+                        Michael Schimidt
+                    </div>
+
+                </div>
+                <div id="testimonial-2" hidden class="col-4 testimonial-card">
+                    <div class="col-12 testimonial-card-body">
+                        <image><img class="testimonial-img" src="img/girl.png" alt=""></image>
+                        <p class="testimonial-class">"Nos encantó el tour a isla tortuga, esperamos repetirlo el siguiente año"</p>
+                        Rosario Martinez
+                    </div>
+
+                </div>
+                <div id="testimonial-3" hidden class="col-4 testimonial-card">
+                    <div class="col-12 testimonial-card-body">
+                        <image><img class="testimonial-img" src="img/boy.png" alt=""></image>
+                        <p class="testimonial-class">"Experiencia increible!! recomendado 100%"</p>
+                        Aaron Taylor
+                    </div>
+
+                </div>
+            </section>
+            <section id="costs-calculator" class="col-12 articles">
+                <article>
+                    ¿No sabe cuanto va a gastar? Utilice nuestra calculadora de costos para tener un estimado de su costo, tan solo haga click en el botón de abajo.
+                </article>
+                <div class="col-5"></div>
+                <button class="btn-info col-4"><a href="calculadora.html">Calcule sus costos</a></button>
+            </section>
+        </section>
+
+    </section>
+    <div class="push"></div>
+    <footer id="footer">
+        <div>Todos los derechos reservados 2018</div>
+    </footer>
+    <script>
+        function displayTestimonial() {
+            var testimonials = []
+            testimonials.push(document.getElementById("testimonial-1"));
+            testimonials.push(document.getElementById("testimonial-2"));
+            testimonials.push(document.getElementById("testimonial-3"));
+            setInterval(function() {
+                for (var i = 0; i < testimonials.length; i++) {
+                    if (!testimonials[i].hasAttribute("hidden")) {
+                        var testimonialIndex = Math.floor((Math.random() * 3));
+                        if (i != testimonialIndex) {
+                            testimonials[testimonialIndex].removeAttribute("hidden")
+                            testimonials[i].setAttribute("hidden", true);
+                        }
+                    }
+                }
+
+            }, 3000);
+        }
+
+    </script>
+</body>
+
+</html>

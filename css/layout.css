@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    margin-top: 5em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#footer {
+    background: #4e4e4e;
+    float: left;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    color: #dddddd;
+    text-align: center;
+    padding: 2em;
+}
+
+#navbar {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    border-width: 0.01em;
+    top: 0;
+    left: 0;
+    background: #6dd4b1;
+    color: white;
+}
+#navbar > ul > li > a{
+    color: white;
+}
+ul > li {
+    width: 10%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#brand {
+    width: 60%;
+}
+
+// Grid
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 95%;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+
+}
+
+#central {
+    margin-left: 2em;
+
+}
+
+.articles {
+    margin: 2em;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+body {
+    background: #f3faf2;
+}
+
+#img-container {
+    position: relative;
+}
+
+#button-banner {
+    position: absolute;
+    bottom: -5em;
+    right: 0.5em;
+    width: 15em;
+    height: 3em;
+    border-style: solid;
+    background: rgba(0, 0, 0, 0);
+    border-color: white;
+    border-width: 0.3em;
+    color: white;
+    font-size: 15px;
+
+}
+
+#img-p {
+    position: absolute;
+    top: 1em;
+    left: 10px;
+    color: #ffffff;
+}
+
+.img-text-wrapper {
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 750px;
+    background: rgba(211, 210, 210, 0.23);
+    height: 450px;
+}
+
+.testimonial-card {
+    left: 200px;
+    text-align: center;
+}
+
+.testimonial-class {
+    left: 100em;
+    font-style: italic;
+}
+
+.testimonial-img {
+    width: 32px;
+}
