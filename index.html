@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller # 1</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/forms.css">
     <link rel="icon" href="data:;base64,iVBORwOKGO=" />
 </head>
 
 <body onload="displayTestimonial();">
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li id="brand">Logotipo</li>
-                <li><a href="index.html">Inicio</a></li>
-                <li>Viajes</li>
-                <li><a href="contacto.html">Contacto</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light "style="background-color: #6dd4b1;">
+        <a class="navbar-brand" href="#">Viajes CR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="col-md-7 col-sm-7"></div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Viajes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
 
     <section id="container" style="margin-top: 2em;">
         <!--<aside id="sidebar" class="col-1">
@@ -34,44 +47,45 @@
                 <div>Cuba también es un país hermoso</div>
             </section>
         </aside>-->
-        <section id="central" class="col-12">
+        <section class="col-md-11 col-sm-8" id="central">
             <section id="img-container" class="articles">
                 <h3>Bellezas naturales</h3>
                 <image><img id="banner" src="img/mountain2.jpg" alt="Montaña"></image>
-                <div class="img-text-wrapper">
-                    <p id="img-p">Atrevase a viajar con nosotros y vivir una experiencia única llena de emociones</p>
-                    <button id="button-banner" style="position: relative">Conoce más</button>
-                </div>
             </section>
             <section class="articles">
                 <h3 style="text-align: center">Testimonios</h3>
-                <div class="col-4"></div>
-                <div id="testimonial-1" class="col-4 testimonial-card">
-                    <div class="col-12 testimonial-card-body">
-                        <image><img class="testimonial-img" src="img/boy.png" alt=""></image>
-                        <p class="testimonial-class">"La aventura vivida en C.R fue increíble, desde el primer momento el compromiso por parte de la empresa para hacernos sentir lo mejor posible se notó."</p>
+                <div class="col-md-2"></div>
+                <div id="testimonial-1" class="card col-md-4 testimonial-card">
+                    <div class="card-header">
                         Michael Schimidt
                     </div>
+                    <div class="col-sm-12 testimonial-card-body">
+                        <image><img class="testimonial-img" src="img/boy.png" alt=""></image>
+                        <p class="testimonial-class">"La aventura vivida en C.R fue increíble, desde el primer momento el compromiso por parte de la empresa para hacernos sentir lo mejor posible se notó."</p>
 
-                </div>
-                <div id="testimonial-2" hidden class="col-4 testimonial-card">
-                    <div class="col-12 testimonial-card-body">
-                        <image><img class="testimonial-img" src="img/girl.png" alt=""></image>
-                        <p class="testimonial-class">"Nos encantó el tour a isla tortuga, esperamos repetirlo el siguiente año"</p>
-                        Rosario Martinez
                     </div>
 
                 </div>
-                <div id="testimonial-3" hidden class="col-4 testimonial-card">
-                    <div class="col-12 testimonial-card-body">
+                <div id="testimonial-2" hidden class="card col-4 testimonial-card">
+                    <div class="card-header">Rosario Martínez</div>
+                    <div class="col-sm-12 testimonial-card-body">
+                        <image><img class="testimonial-img" src="img/girl.png" alt=""></image>
+                        <p class="testimonial-class">"Nos encantó el tour a isla tortuga, esperamos repetirlo el siguiente año"</p>
+                    </div>
+
+                </div>
+                <div id="testimonial-3" hidden class="card col-4 testimonial-card">
+                    <div class="card-header">
+                        Aaron Taylor
+                    </div>
+                    <div class="col-sm-12 testimonial-card-body">
                         <image><img class="testimonial-img" src="img/boy.png" alt=""></image>
                         <p class="testimonial-class">"Experiencia increible!! recomendado 100%"</p>
-                        Aaron Taylor
                     </div>
 
                 </div>
             </section>
-            <section id="costs-calculator" class="col-12 articles">
+            <section id="costs-calculator" class="col-sm-12 articles">
                 <article>
                     ¿No sabe cuanto va a gastar? Utilice nuestra calculadora de costos para tener un estimado de su costo, tan solo haga click en el botón de abajo.
                 </article>
@@ -79,12 +93,12 @@
                 <button class="btn-info col-4"><a href="calculadora.html">Calcule sus costos</a></button>
             </section>
         </section>
-
+        <div id="push" class="push"></div>
     </section>
-    <div class="push"></div>
-    <footer id="footer">
-        <div>Todos los derechos reservados 2018</div>
-    </footer>
+    <div id="footer">Todos los derechos reservados</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
         function displayTestimonial() {
             var testimonials = []
@@ -104,7 +118,6 @@
 
             }, 3000);
         }
-
     </script>
 </body>
 
